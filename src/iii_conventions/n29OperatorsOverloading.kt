@@ -19,13 +19,5 @@ fun todoTask29(): Nothing = TODO(
         date.addTimeIntervals(timeInterval, 1)
     })
 
-fun task29_1(today: MyDate): MyDate {
-    todoTask29()
-//    return today + YEAR + WEEK
-}
-
-fun task29_2(today: MyDate): MyDate {
-    todoTask29()
-//    return today + YEAR * 2 + WEEK * 3 + DAY * 5
-}
-
+fun task29_1(today: MyDate) = today + YEAR + WEEK
+fun task29_2(today: MyDate) = today + YEAR * 2 + WEEK * 3 + DAY * 5
