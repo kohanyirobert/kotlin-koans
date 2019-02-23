@@ -5,8 +5,6 @@ data class MyDate(val year: Int, val month: Int, val dayOfMonth: Int) : Comparab
             compareValuesBy(this, other, { it.year }, { it.month }, { it.dayOfMonth })
 }
 
-operator fun MyDate.rangeTo(other: MyDate): DateRange = todoTask27()
-
 enum class TimeInterval {
     DAY,
     WEEK,
